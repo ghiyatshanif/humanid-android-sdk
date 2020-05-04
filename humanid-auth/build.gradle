@@ -1,14 +1,9 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.github.dcendents.android-maven'
 
-project.group 'com.humanid'
-
-project.ext.name = 'HumanID-Auth-Android-SDK'
-project.ext.artifactId = "humanid-auth"
-project.ext.version = "1.0.0"
-project.ext.description = 'HumanID Auth Android SDK'
-project.ext.url = 'https://github.com/bluenumberfoundation/humanid-android-sdk'
+group = 'com.github.bluenumberfoundation'
 
 android {
     defaultConfig {
@@ -19,7 +14,7 @@ android {
 
 dependencies {
     // HumanID Dependencies
-    implementation project(':humanid-common')
+    implementation project(path: ':humanid-common')
 
     // Androidx Library
     implementation "androidx.appcompat:appcompat:${project.ext.appcompatVersion}"

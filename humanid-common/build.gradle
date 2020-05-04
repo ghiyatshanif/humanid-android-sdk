@@ -1,12 +1,7 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
 
-project.group 'com.humanid'
-
-project.ext.name = 'HumanID-Common-Android-SDK'
-project.ext.artifactId = "humanid-common"
-project.ext.version = "1.0.0"
-project.ext.description = 'HumanID Common Android SDK'
-project.ext.url = 'https://github.com/bluenumberfoundation/humanid-android-sdk'
+group = 'com.github.bluenumberfoundation'
 
 android {
     defaultConfig {
